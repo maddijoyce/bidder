@@ -5,7 +5,7 @@ import pubsub, { BID_MADE } from '../../config/pubsub';
 export default {
   Auction: {
     id: ({ _id }) => (_id),
-    price: ({ bids }) => (Math.max(...bids.map(({ amount }) => (amount)))),
+    price: ({ bids }) => (bids.length ? Math.max(...bids.map(({ amount }) => (amount))) : 0),
     createdBy: ({ createdById }) => (db.Users.findOne(new db.ObjectID(createdById))),
   },
   Query: {
