@@ -50,7 +50,7 @@ test('Updates an auction', async () => {
 
 test('Makes a bid', async () => {
   const result = await resolvers.Mutation.makeBid(null, { id: auction._id, amount: 10, me: 'user2' }, { user: { _id: 'user2' } });
-  expect(result).toHaveProperty('amount', 10);
+  expect(result.bids[1]).toHaveProperty('amount', 10);
 });
 
 test('Makes a low bid', async () => {
