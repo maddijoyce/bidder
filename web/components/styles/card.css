@@ -1,0 +1,48 @@
+.card {
+  background: $white;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px 1px color($grey90 alpha(10%));
+  padding: 1.6rem;
+}
+
+.card.link {
+  color: $grey90;
+  display: block;
+  margin: 0.6rem 0;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+}
+
+.card-title {
+  color: $green90;
+  margin: 0.2rem 0;
+}
+
+.card-subtitle {
+  font-size: 1.2rem;
+  margin: 0.2rem 0;
+  text-transform: uppercase;
+}
+
+.card-icon {
+  fill: $grey30;
+  height: 100%;
+  padding: 1.8rem;
+  position: absolute 0 0 0 auto;
+  width: 5rem;
+}
+
+.empty-item {
+  color: $grey30;
+  margin: 6rem auto;
+  max-width: 60rem;
+  text-align: center;
+  width: 98%;
+}
+
+.empty-item h2 {
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 2rem 0;
+}

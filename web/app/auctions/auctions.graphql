@@ -1,0 +1,46 @@
+query auctions($me: ID) {
+  myAuctions(me: $me) {
+    id
+    title
+    description
+    picture
+    finishAt
+    createdAt
+    updatedAt
+    createdBy {
+      id
+      name
+    }
+    price
+    bids {
+      amount
+      createdAt
+      user {
+        id
+        name
+      }
+    }
+  }
+  liveAuctions {
+    id
+    title
+    description
+    picture
+    finishAt
+    createdAt
+    updatedAt
+    createdBy {
+      id
+      name
+    }
+    price
+    bids {
+      amount
+      createdAt
+      user {
+        id
+        name
+      }
+    }
+  }
+}

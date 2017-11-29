@@ -1,0 +1,43 @@
+.overlay {
+  align-items: center;
+  background: color($grey90 alpha(80%));
+  color: $grey10;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100%;
+  justify-content: center;
+  position: absolute 0;
+  width: 100%;
+}
+
+.overlay-content {
+  max-width: 35rem;
+  padding: 1.6rem;
+  width: 98%;
+}
+
+.overlay-code {
+  margin: 1.6rem 0;
+  text-transform: uppercase;
+}
+
+.overlay-rule {
+  border: 0;
+  border-top: 4px solid $grey10;
+  display: block;
+  margin: 0 auto 0 0;
+  width: 3rem;
+}
+
+.overlay-title {
+  line-height: 1.1;
+  margin: 1.2rem 0 2.6rem;
+}
+
+.overlay-detail {
+  margin: 1.6rem 0;
+}
+
+.overlay-detail a {
+  color: $blue20;
+}

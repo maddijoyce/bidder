@@ -1,0 +1,6 @@
+mutation signedUrl($type: String) {
+  signedUrl(type: $type) {
+    uploadUrl
+    imageUrl
+  }
+}

@@ -1,0 +1,184 @@
+.field {
+  background: none;
+  border: $grey80 solid 1px;
+  border-radius: 3px;
+  color: $grey80;
+  display: block;
+  margin: 2rem auto;
+  max-width: 50rem;
+  position: relative;
+  width: 98%;
+}
+
+.field.hasIcon {
+  padding-left: 5rem;
+}
+
+.field.loading {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.field.plain {
+  border-radius: 0;
+  margin: 0;
+  max-width: 100%;
+  border: none;
+  border-bottom: $grey80 solid 1px;
+}
+
+.field-icon {
+  color: inherit;
+  fill: currentColor;
+  height: 100%;
+  margin-right: 0.4rem;
+  padding: 1.3rem;
+  position: absolute 0 auto 0 0;
+  width: 5rem;
+}
+
+.field-label {
+  background-color: $grey10;
+  border: 0;
+  border-radius: 4px;
+  display: inline;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  padding: 0.2rem 0.6rem 0.3rem 0.8rem;
+  position: absolute -11px auto auto 0;
+}
+
+.field.hasIcon .field-label {
+  left: 47px;
+}
+
+.field-label * {
+  vertical-align: middle;
+}
+
+.modal .field-label {
+  background-color: $white;
+}
+
+.field-error {
+  color: $red50;
+  font-weight: 400;
+}
+
+.field-input {
+  background: none;
+  border: 0;
+  color: inherit;
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.4;
+  padding: 1.4rem 0.6rem;
+  text-align: inherit;
+  width: 100%;
+}
+
+textarea.field-input {
+  min-height: 78px;
+}
+
+.field-input:focus {
+  outline: none;
+}
+
+.field-input--hidden {
+  display: none;
+}
+
+.field-placeholder {
+  color: $grey60;
+  font-size: 4rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 12rem 0.6rem;
+  text-align: center;
+}
+
+.field-display {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 34.7rem;
+  margin: 0.5rem auto;
+  width: 100%;
+}
+
+.field-results {
+  background: $white;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 1px 1px 1px 1px color($grey90 alpha(20%));
+  display: none;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 100%;
+  z-index: 999;
+}
+
+.field-results.field-results--focus {
+  display: block;
+}
+
+.field-result {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 1.8rem 0.6rem 1.8rem 5.6rem;
+  text-decoration: none;
+  width: 100%;
+}
+
+.field-result--empty {
+  color: $grey30;
+  font-weight: 700;
+}
+
+.field-result:nth-child(even) {
+  background: $grey10;
+}
+
+.field.error {
+  animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) forwards;
+  border-color: $red50 !important;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.form {
+  position: relative;
+}
+
+.form-full {
+  align-items: center;
+  background: color($grey10 alpha(80%));
+  display: flex;
+  justify-content: center;
+  position: absolute 0;
+  z-index: 99;
+}
+
+.form-full-icon {
+  display: block;
+  fill: $green50;
+  height: 4rem;
+  width: 4rem;
+}
+
+@keyframes shake {
+  10%, 90% { transform: translate3d(-1px, 0, 0); }
+  20%, 80% { transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+  40%, 60% { transform: translate3d(4px, 0, 0); }
+}
+

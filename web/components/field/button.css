@@ -1,0 +1,79 @@
+.button {
+  background: $grey60;
+  border: 0;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px 1px color($grey90 alpha(20%));
+  color: $white;
+  cursor: pointer;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  margin: 1rem auto;
+  max-width: 98%;
+  min-width: 15rem;
+  opacity: 1;
+  padding: 0.8rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: opacity 0.4s ease;
+  width: auto;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.2;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button * {
+  vertical-align: middle;
+}
+
+.button-icon {
+  fill: $white;
+  height: 2.4rem;
+  margin-right: 1rem;
+  width: 2.4rem;
+}
+
+.button.clear {
+  background: none !important;
+  border-radius: 50%;
+  box-shadow: none;
+  color: $green50 !important;
+  display: inline-block;
+  height: 3.4rem;
+  margin: 0 1rem 0.1rem;
+  min-width: auto;
+  padding: 0.3rem;
+  vertical-align: bottom;
+  width: 3.4rem;
+}
+
+.button.clear .button-icon {
+  fill: $blue50;
+  height: 100%;
+  margin-right: 0;
+  width: 100%;
+}
+
+.button.red {
+  background: $red50;
+}
+
+.button.blue {
+  background: $blue50;
+}
+
+.button.facebook {
+  background: #3B5998;
+}
+
+.button.twitter {
+  background: #00ACED;
+}

@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Overlay uses defaults 1`] = `
+<div
+  className="overlay"
+>
+  <div
+    className="overlay-content"
+  >
+    <h6
+      className="overlay-code"
+    >
+      Error
+    </h6>
+    <hr
+      className="overlay-rule"
+    />
+    <h1
+      className="overlay-title"
+    >
+      Something's gone wrong
+    </h1>
+    <hr
+      className="overlay-rule"
+    />
+    <p
+      className="overlay-detail"
+    >
+      <span>
+        If you'd like to 
+        <a
+          href="mailto:error@bidder.maddijoyce.com"
+        >
+          let us know
+        </a>
+        , we'll see what we can do to fix it.
+      </span>
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Overlay uses error code and message 1`] = `
+<div
+  className="overlay"
+>
+  <div
+    className="overlay-content"
+  >
+    <h6
+      className="overlay-code"
+    >
+      404
+    </h6>
+    <hr
+      className="overlay-rule"
+    />
+    <h1
+      className="overlay-title"
+    >
+      This is an error
+    </h1>
+    <hr
+      className="overlay-rule"
+    />
+    <p
+      className="overlay-detail"
+    >
+      This is more info
+    </p>
+  </div>
+</div>
+`;

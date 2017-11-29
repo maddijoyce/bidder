@@ -1,0 +1,13 @@
+subscription onBidMade($id: ID!) {
+  bidMade(id: $id) {
+    price
+    bids {
+      amount
+      createdAt
+      user {
+        id
+        name
+      }
+    }
+  }
+}

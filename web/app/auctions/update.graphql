@@ -1,0 +1,11 @@
+mutation updateAuction($id: ID, $fields: AuctionInput) {
+  updateAuction(id: $id, fields: $fields) {
+    id
+    title
+    description
+    picture
+    finishAt
+    createdAt
+    updatedAt
+  }
+}

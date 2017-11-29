@@ -1,0 +1,13 @@
+mutation makeBid($id: ID, $amount: Int, $me: ID) {
+  makeBid(id: $id, amount: $amount, me: $me) {
+    price
+    bids {
+      amount
+      createdAt
+      user {
+        id
+        name
+      }
+    }
+  }
+}

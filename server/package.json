@@ -1,0 +1,52 @@
+{
+  "name": "bidder-server",
+  "version": "0.0.1",
+  "description": "Bidder Server",
+  "author": "Maddi Joyce <maddi@maddijoyce.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "node index.js",
+    "develop": "nodemon index.js",
+    "setup": "node config/setup.js",
+    "test": "SECRET=test DB_URL=mongodb://localhost:27017/bidder-test jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "apollo-server-koa": "1.2.0",
+    "aws-sdk": "2.156.0",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-import-glob": "^2.0.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-promisify": "^1.0.0",
+    "babel-register": "6.26.0",
+    "bcrypt": "^1.0.2",
+    "chalk": "2.3.0",
+    "dotenv": "4.0.0",
+    "eslint": "4.11.0",
+    "eslint-plugin-import": "2.8.0",
+    "graphql": "0.11.7",
+    "graphql-date": "1.0.3",
+    "graphql-subscriptions": "0.5.5",
+    "graphql-tools": "2.8.0",
+    "jsonwebtoken": "8.1.0",
+    "kcors": "2.2.1",
+    "koa": "2.4.1",
+    "koa-bodyparser": "4.2.0",
+    "koa-compress": "2.0.0",
+    "koa-router": "7.3.0",
+    "lodash": "4.17.4",
+    "mongodb": "2.2.33",
+    "nodemon": "1.12.1",
+    "subscriptions-transport-ws": "0.9.1"
+  },
+  "devDependencies": {
+    "eslint-plugin-jest": "21.3.2",
+    "jest": "21.2.1"
+  }
+}

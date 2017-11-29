@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button uses properties 1`] = `
+<button
+  className="button"
+  onClick={[Function]}
+  type="button"
+>
+  <span
+    className="button-text"
+  >
+    Button
+  </span>
+</button>
+`;
